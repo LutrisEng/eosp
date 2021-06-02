@@ -24,7 +24,7 @@ const SearchPage = ({ data, location }) => {
 
   return (
     <>
-      <Header location={location} />
+      <Header title={`Search for ${query}`} location={location} />
       <main>
         <Container>
           <h1>

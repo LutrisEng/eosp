@@ -9,7 +9,7 @@ import Header from '../../components/Header';
 
 const Project = ({ data }) => (
   <>
-    <Header />
+    <Header title={data.projectsYaml.name} />
     <main>
       <Container>
         <h1>{data.projectsYaml.name}</h1>
