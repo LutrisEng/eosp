@@ -6,8 +6,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: Production
+      url: https://os.lutris.engineering/
 
     steps:
       - uses: actions/checkout@v2
