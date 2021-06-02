@@ -2,37 +2,37 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Lutris Engineering Open Software Portal",
+    title: 'Lutris Engineering Open Software Portal',
   },
   plugins: [
-    "gatsby-plugin-postcss",
-    "gatsby-plugin-image",
-    "gatsby-plugin-react-helmet",
+    'gatsby-plugin-postcss',
+    'gatsby-plugin-image',
+    'gatsby-plugin-react-helmet',
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: "src/images/icon.png",
+        icon: 'src/images/icon.png',
       },
     },
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-mdx',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     'gatsby-transformer-yaml',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: 'images',
+        path: './src/images/',
       },
-      __key: "images",
+      __key: 'images',
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: 'pages',
+        path: './src/pages/',
       },
-      __key: "pages",
+      __key: 'pages',
     },
     {
       resolve: 'gatsby-source-filesystem',
@@ -47,9 +47,9 @@ module.exports = {
         fields: ['slug', 'name'],
         resolvers: {
           ProjectsYaml: {
-            slug: node => node.slug,
-            name: node => node.name,
-            description: node => node.description,
+            slug: (node) => node.slug,
+            name: (node) => node.name,
+            description: (node) => node.description,
           },
         },
       },
