@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0+
+
 import React from 'react';
 import { Link } from 'gatsby';
 import Card from 'react-bootstrap/Card';

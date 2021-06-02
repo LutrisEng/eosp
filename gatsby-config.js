@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0+
+
 module.exports = {
   siteMetadata: {
     title: "Lutris Engineering Open Software Portal",

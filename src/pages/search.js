@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0+
+
 import React, { useMemo } from 'react';
 import { Index } from 'elasticlunr';
 import { graphql } from 'gatsby';
