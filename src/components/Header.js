@@ -18,7 +18,7 @@ const Header = ({ location }) => {
             <Nav.Link href="/">Home</Nav.Link>
           </Nav>
           <Form inline action="/search">
-            <FormControl name="q" value={getQuery(location)} type="text" placeholder="Search" />
+            <FormControl name="q" type="text" placeholder={getQuery(location) || 'Search'} />
           </Form>
         </Navbar.Collapse>
       </Container>
