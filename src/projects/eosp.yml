@@ -1,0 +1,7 @@
+slug: eosp
+name: Open Software Portal
+description: The OSP gives the public access to all of Lutris Engineering's public software.
+featured: true
+links:
+  - name: GitHub
+    href: https://github.com/lutriseng/eosp
