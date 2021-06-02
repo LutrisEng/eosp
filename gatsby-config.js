@@ -5,7 +5,6 @@ module.exports = {
     title: "Lutris Engineering Open Software Portal",
   },
   plugins: [
-    'gatsby-plugin-fontawesome-css',
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
