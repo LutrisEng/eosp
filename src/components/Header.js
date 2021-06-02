@@ -9,6 +9,9 @@ import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 
 import { getQuery } from '../lib/query.js';
+import logo from '../images/logo.svg';
+
+import * as styles from './Header.module.css';
 
 const Header = ({ location, title }) => {
   return <header>
@@ -17,7 +20,7 @@ const Header = ({ location, title }) => {
     </Helmet>
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="/">EOSP</Navbar.Brand>
+        <Navbar.Brand href="/"><span class={styles.brand}><img src={logo} alt="E" class={styles.e} /><span class={styles.osp}>OSP</span></span></Navbar.Brand>
         <Navbar.Toggle aria-controls="nav" />
         <Navbar.Collapse id="nav">
           <Nav className="mr-auto">

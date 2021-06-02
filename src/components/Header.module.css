@@ -1,0 +1,12 @@
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.e {
+    height: 1em;
+}
+
+.osp {
+    color: rgb(110,119,128);
+}
