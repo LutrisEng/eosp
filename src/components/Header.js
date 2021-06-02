@@ -1,4 +1,5 @@
 import React from 'react';
+import {Helmet} from 'react-helmet';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -7,8 +8,11 @@ import FormControl from 'react-bootstrap/FormControl';
 
 import { getQuery } from '../lib/query.js';
 
-const Header = ({ location }) => {
+const Header = ({ location, title }) => {
   return <header>
+    <Helmet>
+      <title>{ title ? `${title} - ` : ''}EOSP</title>
+    </Helmet>
     <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="/">EOSP</Navbar.Brand>
